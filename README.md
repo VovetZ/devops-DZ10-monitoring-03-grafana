@@ -30,7 +30,11 @@
 
 Решение домашнего задания - скриншот веб-интерфейса grafana со списком подключенных Datasource.
 
-## Задание 2
+### Решение
+
+![Data Sources](1.png)
+
+### Задание 2
 Изучите самостоятельно ресурсы:
 - [promql-for-humans](https://timber.io/blog/promql-for-humans/#cpu-usage-by-instance)
 - [understanding prometheus cpu metrics](https://www.robustperception.io/understanding-machine-cpu-usage)
@@ -43,10 +47,33 @@
 
 Для решения данного ДЗ приведите promql запросы для выдачи этих метрик, а также скриншот получившейся Dashboard.
 
+### Решение
+Title: CPU utilization, %
+Metrics: `100 - (rate(node_cpu_seconds_total{job="nodeexporter", mode="idle"}[1m]) * 100)`
+
+Title: CPU LA
+Metrics:
+            `node_load1{job="nodeexporter"}`
+            `node_load5{job="nodeexporter"}`
+            `node_load15{job="nodeexporter"}`
+Title: Memory free
+Metrics: `node_memory_MemFree_bytes`
+
+Title: Disk free
+Metrics: `node_filesystem_free_bytes`
+
+![Data Sources](2.png)
+
 ## Задание 3
 Создайте для каждой Dashboard подходящее правило alert (можно обратиться к первой лекции в блоке "Мониторинг").
 
 Для решения ДЗ - приведите скриншот вашей итоговой Dashboard.
+
+### Решение
+
+```bash
+```
+![]()
 
 ## Задание 4
 Сохраните ваш Dashboard.
@@ -56,6 +83,11 @@
 Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
 
 В решении задания - приведите листинг этого файла.
+
+### Решение
+
+```bash
+```
 
 ---
 
