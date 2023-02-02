@@ -63,7 +63,7 @@ Metrics: node_memory_MemFree_bytes
 Title: Disk free space
 Metrics: node_filesystem_free_bytes
 
-![Data Sources](2.png)
+![Panels](2.png)
 
 ## Задание 3
 Создайте для каждой Dashboard подходящее правило alert (можно обратиться к первой лекции в блоке "Мониторинг").
@@ -72,9 +72,9 @@ Metrics: node_filesystem_free_bytes
 
 ### Решение
 
-```bash
-```
-![]()
+![](3.png)
+![](4.png)
+![](5.png)
 
 ## Задание 4
 Сохраните ваш Dashboard.
@@ -87,9 +87,7 @@ Metrics: node_filesystem_free_bytes
 
 ### Решение
 
-```bash
-```
-
+[JSON Model](model.json)
 ---
 
 ### Как оформить ДЗ?
