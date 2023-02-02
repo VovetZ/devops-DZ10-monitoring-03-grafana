@@ -49,21 +49,21 @@
 
 ### Решение
 Title: CPU utilization, %
-Metrics: `100 - (rate(node_cpu_seconds_total{job="nodeexporter", mode="idle"}[1m]) * 100)`
+Metrics: 100 - (rate(node_cpu_seconds_total{job="nodeexporter", mode="idle"}[1m]) * 100)
 
 Title: CPU LA
 Metrics:
-            `node_load1{job="nodeexporter"}`
+            node_load1{job="nodeexporter"}
             
-            `node_load5{job="nodeexporter"}`
+            node_load5{job="nodeexporter"}
             
-            `node_load15{job="nodeexporter"}`
+            node_load15{job="nodeexporter"}
             
-Title: Memory free
+Title: Free memory
 Metrics: `node_memory_MemFree_bytes`
 
-Title: Disk free
-Metrics: `node_filesystem_free_bytes`
+Title: Disk free space
+Metrics: node_filesystem_free_bytes
 
 ![Data Sources](2.png)
 
