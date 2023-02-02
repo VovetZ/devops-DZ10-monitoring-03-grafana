@@ -54,8 +54,11 @@ Metrics: `100 - (rate(node_cpu_seconds_total{job="nodeexporter", mode="idle"}[1m
 Title: CPU LA
 Metrics:
             `node_load1{job="nodeexporter"}`
+            
             `node_load5{job="nodeexporter"}`
+            
             `node_load15{job="nodeexporter"}`
+            
 Title: Memory free
 Metrics: `node_memory_MemFree_bytes`
 
